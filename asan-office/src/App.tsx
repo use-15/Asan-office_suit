@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Launcher from "./apps/launcher/Launcher";
 import WordApp from "./apps/word/WordApp";
+import SheetsApp from "./apps/sheets/SheetsApp";
+import SlidesApp from "./apps/slides/SlidesApp";
+import PDFApp from "./apps/pdf/PDFApp";
 import "./App.css";
 
 function App() {
@@ -9,9 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Launcher />} />
         <Route path="/word" element={<WordApp />} />
-        <Route path="/sheets" element={<div className="h-screen flex items-center justify-center font-bold text-2xl">Asan Sheets (Coming Soon)</div>} />
-        <Route path="/slides" element={<div className="h-screen flex items-center justify-center font-bold text-2xl">Asan Slides (Coming Soon)</div>} />
-        <Route path="/pdf" element={<div className="h-screen flex items-center justify-center font-bold text-2xl">Asan PDF (Coming Soon)</div>} />
+        <Route path="/sheets" element={<SheetsApp />} />
+        <Route path="/slides" element={<SlidesApp />} />
+        <Route path="/pdf" element={<PDFApp />} />
       </Routes>
     </Router>
   );
